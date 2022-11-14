@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+
+    <style>
+        #click {
+
+            background-color: rgb(226, 24, 24);
+            width: 250px;
+            height: 250px;
+            margin-top: 25px;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <button onmouseenter="showDiv()" onmouseleave="hideDiv()">click</button>
+
+    <div id="click"></div>
+
+    <script>
+
+        const test = document.getElementById("click");
+
+        const showDiv = () => {
+
+            test.style.display = "block";
+        }
+
+        const hideDiv = () => {
+
+            test.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
